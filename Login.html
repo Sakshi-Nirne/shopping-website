@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #ecdbdb, rgb(255, 122, 89));
+
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+form {border: 3px solid #ca0b0b;}
+
+input[type=text]{
+  width: 50%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=password] {
+  width: 50%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: #f52516;
+  color: white;
+  font-size: 20px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: linear-gradient(to right, #d9ee7d, rgb(217, 255, 78));
+}
+
+.cancelbtn {
+  background-color: linear-gradient(to right, #d9ee7d, rgb(217, 255, 78));
+  color: rgb(241, 239, 239);
+  font-size: 20px;
+  text-align: center;
+  margin: 24px 0 12px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+.rem{
+   color: rgb(252, 239, 224);
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius:50%;
+}
+
+.container {
+  padding: 16px;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+h2{
+  color:rgb(255, 122, 89);
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 200px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 20%;
+  }
+}
+</style>
+</head>
+<body>
+<section class="Login" id="Login">
+<h2>Login Form</h2>
+
+<form action="#" method="post">
+  <div class="imgcontainer">
+    <img src="avtar.jpg" alt="Avatar" class="avatar" height="200">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+       
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" class="rem"> Remember me
+    </label>
+  </div>
+
+  <div class="cs">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</section>
+</body>
+</html>
